@@ -5,10 +5,15 @@
 
 
 Act as a house owner in this HW3.
+
 The house equipped with appliances and solar power plant.
+
 The house is in a community microgrid with a total 40 households.
+
 You can decide to **buy or sell the power** from the microgrid through a local power trading platform.
+
 You can still consume the power from the main grid by a fixed price.
+
 
 Goal: Design an agent for bidding power to minimize the electricity bill.
 
