@@ -54,3 +54,10 @@ Goal: Design an agent for bidding power to minimize the electricity bill.
 ## How to calculate electricity bill
 <img src="https://github.com/hardychang/DSAI2022_HW3-Energy-Trading/blob/main/calculate.png" width="500"/><br/>
 
+## Strategy
+***
+if power generation - power consumption >= 0:
+   sell power($2)
+else:
+   buy power($1.5)
+***
