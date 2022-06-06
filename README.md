@@ -23,14 +23,14 @@ Goal: Design an agent for bidding power to minimize the electricity bill.
 * Hourly Solar Power generation (kWh)
 * Hourly Bidding records
 * 12 months of data
- * 8 months for training
- * 1 months for validation
- * 3 months for testing
+  * 8 months for training
+  * 1 months for validation
+  * 3 months for testing
 
 ## Input data
 * consumption.csv: 過去七天歷史用電資料
 * generation.csv: 過去七天產電資料
-* bidresult.csv : 過去七天自己的投標資料
+* bidresult.csv: 過去七天自己的投標資料
 
 ## Output data
 * output.csv: 未來一天投標資訊
@@ -42,15 +42,15 @@ Goal: Design an agent for bidding power to minimize the electricity bill.
 * Platform announces the bidding result(bidresult.csv) and outputs it as a file to every agent’s directory.
 
 ## Action Type
-* Buy
- * Find a seller to buy your power with target_volume and target_price
- * If a transaction succeeds(成交), buyers always get the trade_volume with trade_price
-* Sell
- * Find a buyer to buy your power with target_volume and target_price
- * If a seller sells the amount that insufficiently supply to a buyer, seller needs to buy the power from Taipower and supplies it to buyer with the market price (市電單價), annotated as market_price.
-* No Action
- * Don’t output any bidding action to output.csv in these hours 
+* **Buy**
+  * Find a seller to buy your power with target_volume and target_price.
+  * If a transaction succeeds(成交), buyers always get the trade_volume with trade_price.
+* **Sell**
+  * Find a buyer to buy your power with target_volume and target_price.
+  * If a seller sells the amount that insufficiently supply to a buyer, seller needs to buy the power from Taipower and supplies it to buyer with the market price (市電單價), annotated as market_price.
+* **No Action**
+  * Don’t output any bidding action to output.csv in these hours.
 
 ## How to calculate electricity bill
-<img src="https://github.com/hardychang/DSAI2022_HW3-Energy-Trading/blob/main/calculate.png" width="600"/><br/>
+<img src="https://github.com/hardychang/DSAI2022_HW3-Energy-Trading/blob/main/calculate.png" width="500"/><br/>
 
